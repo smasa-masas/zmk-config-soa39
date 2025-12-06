@@ -45,7 +45,7 @@
         };
 
         shift_tab {
-            bindings = <&kp LS(TAB)>;
+            bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
 
@@ -62,6 +62,11 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <22 23>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
         };
     };
 
@@ -90,18 +95,18 @@
 
         default {
             bindings = <
-&kp Q           &kp W          &kp E         &kp R        &kp T         &kp Y            &kp U        &kp I         &kp O               &kp P
-&kp A           &kp S          &kp D         &kp F        &kp G         &kp H            &kp J        &kp K         &kp L               &lt 5 MINUS
-&kp Z           &kp X          &kp C         &kp V        &kp B         &kp SLASH        &kp N        &kp M         &kp COMMA           &kp PERIOD
-&kp LEFT_SHIFT  &mt LCTRL TAB  &lt 6 DELETE  &lt 3 SPACE  &lt 2 ESCAPE  &lt 3 BACKSPACE  &lt 2 ENTER  &kp LEFT_ALT  &mt LEFT_WIN EQUAL
+&kp Q             &kp W             &kp E             &kp R        &kp T             &kp Y            &kp U        &kp I      &kp O                &kp P
+&kp A             &kp S             &kp D             &kp F        &kp G             &kp H            &kp J        &kp K      &kp L                &lt 5 MINUS
+&mt LEFT_SHIFT Z  &kp X             &kp C             &kp V        &kp B             &kp N            &kp M        &kp COMMA  &kp PERIOD           &kp LS(INT_RO)
+&kp LEFT_CONTROL  &mt LEFT_ALT TAB  &lt 6 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2  &lt 3 BACKSPACE  &lt 2 ENTER  &kp COLON  &mt LEFT_WIN DELETE
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1            &mkp MB3             &mkp MB2  &lt 5 MINUS
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(PAGE_UP)     &mkp MB2             &kp LC(PAGE_DOWN)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1            &mkp MB3             &mkp MB2           &lt 5 MINUS
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans             &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans
             >;
         };
@@ -117,10 +122,10 @@
 
         NUM {
             bindings = <
-&kp N1            &kp N2             &kp N3          &kp N4           &kp N5         &kp N6          &kp N7  &kp N8      &kp N9     &kp N0
-&trans            &trans             &trans          &kp SLASH        &kp BACKSLASH  &trans          &kp N4  &kp N5      &kp N6     &kp ASTERISK
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &trans          &kp N0  &kp N1      &kp N2     &kp N3
-&trans            &trans             &trans          &trans           &trans         &kp LANGUAGE_1  &trans  &kp PERIOD  &kp SLASH
+&kp F4            &kp LS(N2)         &kp LS(N4)      &kp LS(N5)       &kp LS(N6)     &kp KP_PLUS      &kp N6  &kp N7      &kp N8     &kp KP_MINUS
+&trans            &trans             &trans          &kp SLASH        &kp BACKSLASH  &kp KP_MULTIPLY  &kp N4  &kp N5      &kp N6     &kp KP_SLASH
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE       &kp NUMBER_0     &kp N1  &kp N2      &kp N3     &kp DOT
+&trans            &trans             &trans          &trans           &trans         &kp LANGUAGE_1   &trans  &kp PERIOD  &kp SLASH
             >;
         };
 
