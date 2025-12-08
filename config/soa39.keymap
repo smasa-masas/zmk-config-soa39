@@ -95,18 +95,18 @@
 
         default {
             bindings = <
-&kp Q             &kp W             &kp E             &kp R        &kp T             &kp Y            &kp U        &kp I          &kp O                &kp P
-&kp A             &kp S             &kp D             &kp F        &kp G             &kp H            &kp J        &kp K          &kp L                &lt 5 MINUS
-&mt LEFT_SHIFT Z  &kp X             &kp C             &kp V        &kp B             &kp N            &kp M        &kp COMMA      &kp PERIOD           &kp LS(INT_RO)
-&kp LEFT_CONTROL  &mt LEFT_ALT TAB  &lt 6 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2  &lt 3 BACKSPACE  &lt 2 ENTER  &kp SEMICOLON  &mt LEFT_WIN DELETE
+&kp Q             &kp W               &kp E             &kp R        &kp T             &kp Y            &kp U        &kp I          &kp O                &kp P
+&mt LEFT_SHIFT A  &kp S               &kp D             &kp F        &kp G             &kp H            &kp J        &kp K          &kp L                &lt 5 MINUS
+&mt LEFT_SHIFT Z  &mt LEFT_CONTROL X  &kp C             &kp V        &kp B             &kp N            &kp M        &kp COMMA      &kp PERIOD           &kp LS(INT_RO)
+&kp LEFT_CONTROL  &mt LEFT_ALT TAB    &lt 6 LANGUAGE_1  &lt 3 SPACE  &lt 2 LANGUAGE_2  &lt 3 BACKSPACE  &lt 2 ENTER  &kp SEMICOLON  &mt LEFT_WIN DELETE
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(PAGE_UP)     &mkp MB2             &kp LC(PAGE_DOWN)  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1            &mkp MB3             &mkp MB2           &lt 5 MINUS
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(PAGE_UP)     &mkp MB2             &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1            &mkp MB1             &mkp MB2  &lt 5 MINUS
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans              &trans               &trans
             >;
         };
@@ -115,17 +115,17 @@
             bindings = <
 &trans  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp LG(LS(S))   &kp HOME  &kp LC(PAGE_DOWN)  &kp UP_ARROW    &kp LC(PAGE_UP)  &kp END
 &trans  &kp F2       &kp F3    &kp F4      &kp F5          &trans    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON
-&trans  &kp F7       &kp F8    &kp F9      &kp F10         &trans    &kp LEFT           &kp DOWN        &kp RIGHT        &trans
+&trans  &trans       &kp F8    &kp F9      &kp F10         &trans    &kp LEFT           &kp DOWN        &kp RIGHT        &trans
 &trans  &trans       &trans    &trans      &kp LANGUAGE_2  &trans    &trans             &trans          &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp F4            &kp LS(N2)         &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(MINUS)     &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
-&kp LS(NUMBER_4)  &trans             &trans            &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_MULTIPLY  &kp N4        &kp N5        &kp N6        &kp KP_SLASH
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE          &kp NUMBER_0     &kp N1        &kp N2        &kp N3        &kp DOT
-&trans            &trans             &trans            &trans            &trans            &kp LANGUAGE_1   &trans        &kp PERIOD    &kp SLASH
+&kp F4            &kp LS(N2)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp LS(MINUS)     &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
+&kp LS(NUMBER_4)  &trans      &trans            &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp KP_MULTIPLY  &kp N4        &kp N5        &kp N6        &kp KP_SLASH
+&trans            &trans      &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp PIPE          &kp NUMBER_0     &kp N1        &kp N2        &kp N3        &kp DOT
+&trans            &trans      &trans            &trans            &trans            &kp LANGUAGE_1   &trans        &kp PERIOD    &kp SLASH
             >;
         };
 
